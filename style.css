@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Silk Serif Light';
+    src: url('./fonts/SilkSerif-LightItalic.woff2') format('woff2'),
+        url('./fonts/SilkSerif-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plain Light';
+    src: url('./fonts/Plain-Light.woff2') format('woff2'),
+        url('./fonts/Plain-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plain Regular';
+    src: url('./fonts/Plain-Regular.woff2') format('woff2'),
+        url('./fonts/Plain-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silk Serif Italic';
+    src: url('./fonts/SilkSerif-Italic.woff2') format('woff2'),
+        url('./fonts/SilkSerif-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plain Light';
+    color: rgb(228, 228, 226)
+}
+
+html, body{
+    height: 100%;
+   width: 100%;
+}
+#crsr{
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    /* background-color: white; */
+    position: fixed;
+    border: 2px solid white;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+    mix-blend-mode: difference;
+}
+
+.loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index:999;
+    background-color:rgb(20, 21, 21);
+    padding: 25vh 10vw;
+}
+.line h1{
+    font-size:7vw;
+    text-transform: uppercase;
+    font-weight:300 ;
+}
+.line h2{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight:300 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    left: 42vw;
+    bottom: 15.5vh;
+    opacity: 0;
+    
+    
+ 
+}
+
+@keyframes anime{
+    0%{
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 0;
+    }
+    0%{
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 1;
+    }
+    
+    47%{
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 0;
+    }
+    0%{
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 1;
+    }
+
+    100%{
+        font-family: 'Silk Serif Italic';
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+    }
+}
+
+
+.line{
+    /* background-color: red; */
+    height: fit-content;
+    /* overflow: hidden; */
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+    /* background-color: red; */
+}
+
+#timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+  
+}
+
+#timer h5, #timer h6{
+    font-size: 4vw;
+    font-family:'Silk Serif Light';
+
+    font-weight: 100;
+
+}
+#timer h5{
+    width: 6vw;
+    text-align: right;
+}
+
+
+#main{
+    position: relative;
+    background-color: rgb(20, 19, 19);
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #0c0b0b;
+
+}
+/* #page2{
+    height: 100vh;
+    width: 100%;
+} */
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw; 
+
+}
+
+/* #nav{
+    background-color: red;
+} */
+
+
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    font-size: 100;
+    font-size: 0.8vw;
+    position: relative;
+    z-index: 10000;
+}
+
+.hero{
+    /* background-color: red; */
+    width: 70%;
+    margin-left: 14%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    
+
+}
+
+.hero h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    line-height: 7vw;
+    font-weight: 100;
+  
+    /* background-color: red; */
+
+}
+.hero h2,.hero h3{
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    line-height: 7vw;
+    font-weight: 100;
+  
+    /* background-color: red; */
+
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 100;
+    
+}
+.hero:nth-child(2){
+    margin-top: 10vh;
+}

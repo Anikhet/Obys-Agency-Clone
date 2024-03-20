@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('SilkSerif-LightItalic.woff2') format('woff2'),
+        url('SilkSerif-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plain';
+    src: url('Plain-Light.woff2') format('woff2'),
+        url('Plain-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plain';
+    src: url('Plain-Regular.woff2') format('woff2'),
+        url('Plain-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('SilkSerif-Italic.woff2') format('woff2'),
+        url('SilkSerif-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
