@@ -70,13 +70,13 @@ tl.from(".hero h1,#hero2 h1,#hero3 h2,#hero4",{
 loading()
 
 
-document.addEventListener("mousemove",function(details){
-    // console.log("hello")
-    gsap.to("#crsr",{
-        left:details.x,
-        top:details.y
-    })
+// document.addEventListener("mousemove",function(details){
+//     // console.log("hello")
+//     gsap.to("#crsr",{
+//         left:details.x,
+//         top:details.y
+//     })
 
-})
-// Shery.mouseFollower();
+// })
+Shery.mouseFollower();
 Shery.makeMagnet("#nav2 h4,#ob" /* Element to target.*/,{});
